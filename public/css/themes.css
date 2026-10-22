@@ -1,0 +1,39 @@
+/* Light = drafting paper, dark = blueprint. State colours are paired with labels/icons in the UI. */
+:root, :root[data-theme='light'] {
+  color-scheme: light;
+  --paper: #ecf0f6;
+  --grid: rgba(19, 32, 58, 0.055);
+  --surface: #ffffff;
+  --surface-2: #f5f7fb;
+  --surface-3: #e8edf6;
+  --ink: #13203a;
+  --ink-2: #44546f;
+  --ink-3: #5b6a85;
+  --line: #d2dae6;
+  --accent: #2748d6;
+  --accent-ink: #ffffff;
+  --accent-soft: #e4eafd;
+  --ok: #0b7f63;   --ok-soft: #ddf3ec;
+  --bad: #c42b3a;  --bad-soft: #fbe4e7;
+  --warn: #9a5b00; --warn-soft: #fdf0d4;
+  --shadow: 0 1px 2px rgba(19, 32, 58, 0.06), 0 6px 18px -8px rgba(19, 32, 58, 0.18);
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #0d1829;
+  --grid: rgba(160, 190, 255, 0.06);
+  --surface: #14223a;
+  --surface-2: #1a2b47;
+  --surface-3: #223457;
+  --ink: #e7edf8;
+  --ink-2: #a8b8d4;
+  --ink-3: #8da0c2;
+  --line: #2b3f62;
+  --accent: #86a8ff;
+  --accent-ink: #0d1829;
+  --accent-soft: #233a68;
+  --ok: #46d3a8;   --ok-soft: #133b34;
+  --bad: #ff7f8a;  --bad-soft: #44202a;
+  --warn: #f5b547; --warn-soft: #41331a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 22px -10px rgba(0, 0, 0, 0.6);
+}

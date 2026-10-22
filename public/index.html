@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OS Lab Simulator: Understand. Simulate. Compare.</title>
+  <meta name="description" content="Interactive Operating Systems lab simulator: CPU scheduling, memory allocation, file allocation, deadlocks and page replacement.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232748D6'/%3E%3Crect x='5' y='13' width='9' height='6' fill='%23fff'/%3E%3Crect x='15' y='13' width='5' height='6' fill='%23ffd27a'/%3E%3Crect x='21' y='13' width='6' height='6' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=JetBrains+Mono:wght@400;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/viz.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell" id="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation"></aside>
+    <div class="scrim" id="scrim"></div>
+    <div class="content">
+      <header class="topbar" id="topbar"></header>
+      <main id="main" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:2rem">OS Lab Simulator needs JavaScript enabled.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

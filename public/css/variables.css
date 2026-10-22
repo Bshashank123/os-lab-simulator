@@ -1,0 +1,24 @@
+/* Design tokens that do not change with the theme. */
+:root {
+  --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-2: 1.4rem;
+  --step-3: clamp(1.7rem, 1.2rem + 1.6vw, 2.3rem);
+  --step-4: clamp(2.6rem, 1.6rem + 4vw, 5rem);
+
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 14px;
+  --gap: 1rem;
+  --sidebar-w: 272px;
+  --anim: 450ms;
+
+  /* Process / file colours. All carry white text at AA contrast. */
+  --p0: #2748d6; --p1: #0b7f63; --p2: #b4530a; --p3: #8e3bb8; --p4: #c42b3a;
+  --p5: #0f7a9c; --p6: #6b7a12; --p7: #b0307a; --p8: #4b5ba8; --p9: #7a5a2b;
+}

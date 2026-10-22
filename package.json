@@ -1,0 +1,11 @@
+{
+  "name": "os-lab-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OS Lab Simulator: Python algorithm core, plain HTML/CSS/JS frontend, Vercel-ready.",
+  "scripts": {
+    "start": "python dev_server.py",
+    "test": "python -m pytest tests -q && node --test tests/js/*.test.mjs"
+  }
+}

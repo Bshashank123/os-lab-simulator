@@ -1,0 +1,40 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100vh; font: 400 var(--step-0) / 1.55 var(--font-body); color: var(--ink);
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; margin: 0 0 0.5rem; color: var(--ink); font-weight: 700; letter-spacing: -0.01em; }
+h1 { font-size: var(--step-3); }
+h2 { font-size: var(--step-1); }
+h3 { font-size: 1.05rem; }
+h4 { font-size: var(--step-0); margin-top: 1rem; }
+p { margin: 0 0 0.75rem; max-width: 72ch; }
+a { color: var(--accent); text-underline-offset: 2px; }
+code, kbd { font-family: var(--font-mono); font-size: 0.85em; background: var(--surface-3); padding: 0.1em 0.35em; border-radius: var(--r-sm); }
+kbd { border: 1px solid var(--line); }
+ul, ol { padding-left: 1.3rem; margin: 0 0 0.75rem; }
+small, .hint { color: var(--ink-3); font-size: var(--step--1); }
+.hint { display: block; margin: 0.25rem 0 0.75rem; max-width: 64ch; }
+.muted { color: var(--ink-3); }
+.text-bad { color: var(--bad); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; left: 0.5rem; top: -4rem; background: var(--accent); color: var(--accent-ink); padding: 0.5rem 0.9rem; border-radius: var(--r-md); z-index: 100; }
+.skip-link:focus { top: 0.5rem; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: var(--r-sm); }
+main:focus { outline: none; }
+abbr.term { text-decoration: underline dotted; cursor: help; }
+.icon { display: inline-flex; vertical-align: middle; flex: none; }
+.empty { color: var(--ink-3); padding: 0.75rem 0; }
+
+@keyframes pop { 0% { transform: scale(0.82); opacity: 0.2; } 60% { transform: scale(1.06); } 100% { transform: scale(1); opacity: 1; } }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes toast-in { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* Everything must work with animation off. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+:root[data-motion='off'] *, :root[data-motion='off'] *::before, :root[data-motion='off'] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
