@@ -1,2 +1,8 @@
-   [tool.vercel]
-   entrypoint = "api.simulate:app"
+[project]
+name = "os-lab-simulator"
+version = "1.0.0"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.vercel]
+entrypoint = "api.simulate:app"
